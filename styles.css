@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#grid {
+  display: grid;
+  margin: 20px auto;
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 5px;
+}
+
+#roll-dice {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#dice-result, #turn-indicator {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.cell .icon {
+  font-size: 20px;
+}
+
+.player-head { background-color: #ffcccc; }
+.player-body { background-color: #ff9999; }
+.player-limbs { background-color: #ff6666; }
+.player-gun { background-color: #ff3333; }
+.player-bullets { background-color: #ff0000; }
